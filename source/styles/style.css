@@ -1,4 +1,203 @@
+html {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("../fonts/TTLakes-Bold.woff") format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("../fonts/TTLakes-Medium.woff") format('woff');
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
     margin: 0;
     padding: 0;
+    font-family: "TT Lakes", "Arial", sans-serif;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.wrapper {
+    /* width: 1120px;
+    height: 535px; */
+}
+
+.header-container {
+    margin-top: 42px;
+    margin-right: 25px;
+    margin-left: 1px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-title {
+    
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.service-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.service-button {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: right;
+}
+
+.nav-container {
+
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    border: 2px solid transparent;
+    display: inline-block;
+    padding: 8px 21px;
+    color: #7E7E82;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.nav-link:hover {
+    border: 2px solid #B8FFEC;
+    border-radius: 5px;
+}
+
+.info-wrapper {
+    display: flex;
+    margin-left: 34px;
+    margin-right: 29px;
+}
+
+.info-text {
+    margin-right: 36px;
+}
+
+.read-next__link {
+    /* border: 1px solid red; */
+    display: flex;
+    text-align: center;
+    height: 24px;
+
+}
+
+.arrows__icon {
+    /* border: 1px solid red; */
+    background-image: url("../icons/arrows.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* align-self: center; */
+    width: 5%;
+    margin-right: 8px;
+    /* height: 100%; */
+    /* padding: 5px; */
+}
+
+.read-next__link a {
+    /* border: 1px solid red; */
+    /* display: block; */
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+
+}
+
+.info-image {
+    width: 531.35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
