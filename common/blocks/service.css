@@ -306,9 +306,9 @@ opacity: 0px;
 
     .main-header__right-side_lg {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         min-width: 35%;
-        padding-right: 7px;
+        padding-right: 34px;
     }
 
     .service-request-link-container {
