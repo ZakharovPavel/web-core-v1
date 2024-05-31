@@ -140,11 +140,12 @@ opacity: 0px;
 }
 
 .main-section__text-container {
-    
+    padding-bottom: 16px;
 }
 
 .main-section__text {
     max-height: 90px;
+    padding-bottom: 16px;
     overflow: hidden;
     font-family: TT Lakes;
     font-size: 14px;
@@ -153,9 +154,12 @@ opacity: 0px;
     text-align: left;
 }
 
-.read-button {
+.read-button-container {
     padding-top: 16px;
-    padding-bottom: 16px;
+}
+
+.read-button {
+
     font-weight: 500;
     display: flex;
     justify-content: space-between;
@@ -258,12 +262,13 @@ opacity: 0px;
     }
     
     .main-section__text-container {
-        padding: 0;
+        /* padding: 0; */
         width: 50%;
     }
 
     .main-section__text {
         padding-right: 41px;
+        /* padding-bottom: 16px; */
         max-height: 160px;
         line-height: 20px;
     }
