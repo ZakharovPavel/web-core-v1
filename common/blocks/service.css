@@ -262,13 +262,11 @@ opacity: 0px;
     }
     
     .main-section__text-container {
-        /* padding: 0; */
         width: 50%;
     }
 
     .main-section__text {
         padding-right: 41px;
-        /* padding-bottom: 16px; */
         max-height: 160px;
         line-height: 20px;
     }
