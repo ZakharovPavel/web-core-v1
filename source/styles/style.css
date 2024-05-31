@@ -1,14 +1,42 @@
 
 @font-face {
-    font-family: "TT Lakes", Arial, Helvetica, sans-serif;
-    src: url("../fonts/TTLakes-Bold.woff") format('woff');
+    font-family: "TT Lakes";
+    src: url("../fonts/TTLakes-Bold.woff") format('woff'),
+    url("../fonts/TTLakes-Bold.ttf") format('ttf'),
+    url("../fonts/TTLakes-Bold.eot") format('eot');
     font-weight: 700;
 }
 
 @font-face {
-    font-family: TT Lakes;
-    src: url("../fonts/TTLakes-Medium.woff") format('woff');
-    /* font-weight: 400; */
+    font-family: "TT Lakes";
+    src: url("../fonts/TTLakes-Medium.woff") format('woff'),
+    url("../fonts/TTLakes-Medium.ttf") format('ttf'),
+    url("../fonts/TTLakes-Medium.eot") format('eot');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("../fonts/TTLakes-Regular.woff") format('woff'),
+    url("../fonts/TTLakes-Regular.ttf") format('ttf'),
+    url("../fonts/TTLakes-Regular.eot") format('eot');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("../fonts/TTLakes-DemiBold.woff") format('woff'),
+    url("../fonts/TTLakes-DemiBold.ttf") format('ttf'),
+    url("../fonts/TTLakes-DemiBold.eot") format('eot');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("../fonts/TTLakes-Black.woff") format('woff'),
+    url("../fonts/TTLakes-Black.ttf") format('ttf'),
+    url("../fonts/TTLakes-Black.eot") format('eot');
+    font-weight: 550;
 }
 
 
