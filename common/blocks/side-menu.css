@@ -34,7 +34,9 @@
 .round-button {
 }
 
-.round-button--burger {
+.round-button--cross {
+    background-image: url("../../source/icons/cross.svg");
+
 }
 
 .header-logo {
