@@ -3,13 +3,19 @@
     padding: 0;
 }
 
-html {
-    box-sizing: border-box;
-}
-
+html,
 body {
+    height: 100%;
+    box-sizing: border-box;
     font-family: "TT Lakes", "Arial", sans-serif;
     color: #1B1C21;
+}
+
+.wrapper {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1120px;
+    min-height: 100%;
 }
 
 ul {
