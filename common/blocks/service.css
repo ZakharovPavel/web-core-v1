@@ -1,10 +1,3 @@
-.icon {
-    width: 40px;
-    height: 40px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .round-button {
     width: 40px;
     height: 40px;
@@ -42,12 +35,10 @@
 }
 
 .round-button--burger {
-    width: 100%;
-    height: 100%;
     background-image: url("../../source/icons/burger.png");
 }
 
-.header-top__logo {
+.header-logo {
     width: 96.55px;
 height: 50.81px;
 top: 18.59px;
@@ -73,14 +64,10 @@ opacity: 0px;
 }
 
 .round-button--repair {
-    width: 100%;
-    height: 100%;
     background-image: url("../../source/icons/repair.png");
 }
 
 .round-button--checkstatus {
-    width: 100%;
-    height: 100%;
     background-image: url("../../source/icons/checkstatus.png");
 }
 
@@ -100,7 +87,7 @@ opacity: 0px;
 }
 
 .main-header::before {
-    content: url("../../source/icons/highlight.svg");
+    content: url("../../source/icons/highlight--md.svg");
 }
 
 .main-header__highlight {
@@ -232,21 +219,23 @@ opacity: 0px;
         column-gap: 16px;
     }
 
+    .contact-buttons {
+        display: flex;
+        min-width: 40%;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 16px;
+    }
+
     .round-button--call {
-        width: 100%;
-        height: 100%;
         background-image: url("../../source/icons/call.png");
     }
 
     .round-button--chat {
-        width: 100%;
-        height: 100%;
         background-image: url("../../source/icons/chat.png");
     }
 
     .round-button--profile {
-        width: 100%;
-        height: 100%;
         background-image: url("../../source/icons/profile.png");
     }
     
@@ -357,14 +346,6 @@ opacity: 0px;
 
     .service-status__text {
         padding-right: 9px;
-    }
-
-    .repair-icon {
-        background-image: url("../../source/icons/repair.png");
-    }
-    
-    .checkstatus-icon {
-        background-image: url("../../source/icons/checkstatus.png");
     }
 
     .slide-menu {
