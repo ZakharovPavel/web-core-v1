@@ -143,14 +143,17 @@
 }
 
 .lang-switcher {
-
+    display: flex;
+    column-gap: 10px;
 }
 
 .lang-switcher__link {
     text-transform: uppercase;
+    display: block;
 }
 
 .lang-switcher__link:hover {
+    transform: scale(1.2);
     color: rgba(126, 126, 130, 1);
-    transition: color 0.2s;
+    transition: all 0.2s;
 }
