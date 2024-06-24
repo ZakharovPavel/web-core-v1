@@ -164,6 +164,7 @@ opacity: 0px;
     font-weight: 500;
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
     font-family: "TT Lakes";
     font-size: 16px;
     line-height: 24px;
@@ -172,7 +173,7 @@ opacity: 0px;
 }
 
 .read-button::before {
-    content: url("../../source/icons/expand.svg");
+    content: url("../../source/icons/expand-down.svg");
 }
 
 .read-button__text {
