@@ -1,0 +1,15 @@
+.round-icon {
+
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--go {
+    background-image: url("../../source/icons/round-go.svg");
+  }
+
+  &--techs {
+    align-self: flex-end;
+  }
+}

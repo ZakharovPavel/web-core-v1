@@ -1,0 +1,10 @@
+$textLinkColorPink: rgba(255, 62, 121, 1);
+
+
+.text-link {
+  color: $textLinkColorPink;
+
+  &:hover {
+    text-decoration: underline;
+}
+}

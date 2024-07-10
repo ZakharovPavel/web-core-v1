@@ -1,0 +1,171 @@
+$hoverLinkColor: rgba(126, 126, 130, 1);
+$linkHoverBoxShadowColor: rgba(128, 128, 128, 0.185);
+$bgColorWhite: rgba(255, 255, 255, 1);
+
+
+.sm {
+  // position: fixed;
+  max-width: 320px;
+  min-width: 320px;
+  min-height: 100%;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+  display: none;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 9;
+
+  @media (min-width: 1366px) {
+    display: flex;
+    box-shadow: none;
+    position: static;
+  }
+
+  // .sm__header
+
+  &__header {
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  // .sm__menu
+
+  &__menu {
+    flex-grow: 1;
+  }
+
+  // .sm__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    row-gap: 10px;
+  }
+
+  // .sm__item
+
+  &__item {
+    display: flex;
+
+    &:before {
+      content: url("../../source/icons/highlight--xs.svg");
+      align-self: center;
+      transition: opacity 0.3s, transform 0.3s;
+      opacity: 0;
+    }
+
+    &:hover::before {
+      align-self: center;
+      opacity: 1;
+    }
+  }
+
+  // .sm__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width: 100%;
+    padding: 0 20px;
+    transition: color 0.3s, box-shadow 0.3s;
+
+    &:hover {
+      color: $hoverLinkColor;
+      box-shadow: -10px 5px 50px 0 $linkHoverBoxShadowColor;
+  }
+  }
+
+  // .sm__footer
+
+  &__footer {
+    padding: 24px;
+    padding-bottom: 32px;
+    max-height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    row-gap: 10px;
+    position: fixed;
+    bottom: 0;
+    background: $bgColorWhite;
+    row-gap: 40px;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      position: fixed;
+      bottom: 0;
+      background: $bgColorWhite;
+      row-gap: 40px;
+    }
+
+    @media (min-width: 1366px) {
+      position: fixed;
+      bottom: 0;
+      background: $bgColorWhite;
+      row-gap: 40px;
+    }
+  }
+
+  // .sm__contacts
+
+  &__contacts {
+  }
+
+  // .sm__mail
+
+  &__mail {
+    display: block;
+    padding: 16px 0;
+  }
+
+  // .sm__phone-number
+
+  &__phone-number {
+    display: block;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    font-weight: 700;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

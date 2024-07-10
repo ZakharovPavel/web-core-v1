@@ -1,0 +1,226 @@
+$inputColor: rgba(126, 126, 130, 1);
+$bgColorWhite: rgba(255, 255, 255, 1);
+$inputColorBorder: rgba(234, 234, 234, 1);
+
+.prices-swiper {
+
+  width: 100%;
+  min-height: 160px;
+
+  // .prices-swiper__wrapper
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      flex-direction: column;
+      padding-bottom: 24px;
+    }
+
+    @media (min-width: 1366px) {
+      flex-direction: column;
+      padding-bottom: 24px;
+    }
+  }
+
+  // .prices-swiper__card-header-container
+
+  &__card-header-container {
+    display: none;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      padding-bottom: 16px;
+      padding-left: 16px;
+      padding-right: 16px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 1366px) {
+      padding-bottom: 16px;
+      padding-left: 16px;
+      padding-right: 16px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  // .prices-swiper__field-name
+
+  &__field-name {
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: left;
+    color: $inputColor;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      display: none;
+    }
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
+
+    &--header {
+      @media (min-width: 768px) and (max-width: 1365px) {
+        display: block;
+        flex-basis: 10%;
+      }
+    }
+  }
+
+  // .prices-swiper__field-name--header
+
+  &__field-name--header {
+
+    // @media (min-width: 768px) and (max-width: 1365px) {
+    //   &:first-child {
+    //     flex-basis: 52%;
+    //   }
+    // }
+
+    // @media (min-width: 1366px) {
+    //   &:first-child {
+    //     flex-basis: 52%;
+    //   }
+    // }
+
+    @media (min-width: 1366px) {
+      display: block;
+      flex-basis: 10%;
+    }
+
+    &:first-child {
+      @media (min-width: 768px) and (max-width: 1365px) {
+        flex-basis: 52%;
+      }
+  
+      @media (min-width: 1366px) {
+        flex-basis: 52%;
+      }
+    }
+  }
+
+  // .prices-swiper__header-placeholder
+
+  &__header-placeholder {
+    @media (min-width: 768px) and (max-width: 1365px) {
+      visibility: hidden;
+      width: 119px;
+      height: 32px;
+    }
+
+    @media (min-width: 1366px) {
+      visibility: hidden;
+      width: 119px;
+      height: 32px;
+    }
+  }
+
+  // .prices-swiper__item
+
+  &__item {
+    width: 260px;
+    height: 200px;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 6px;
+    background: $bgColorWhite;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      padding: 0 16px;
+      width: 100%;
+      height: 64px;
+    }
+
+    @media (min-width: 1366px) {
+      padding: 0 16px;
+      width: 100%;
+      height: 64px;
+    }
+  }
+
+  // .prices-swiper__card-container
+
+  &__card-container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 6px;
+    background: $bgColorWhite;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      align-items: center;
+      height: 100%;
+      flex-direction: row;
+      border-bottom: 1px solid $inputColorBorder;
+    }
+
+    @media (min-width: 1366px) {
+      align-items: center;
+      height: 100%;
+      flex-direction: row;
+      border-bottom: 1px solid $inputColorBorder;
+    }
+  }
+
+  // .prices-swiper__text-container
+
+  &__text-container {
+    @media (min-width: 768px) and (max-width: 1365px) {
+      flex-basis: 10%;
+    }
+
+    @media (min-width: 1366px) {
+      flex-basis: 10%;
+    }
+
+    &:first-child {
+      @media (min-width: 768px) and (max-width: 1365px) {
+        flex-basis: 52%;
+      }
+
+      @media (min-width: 1366px) {
+        flex-basis: 52%;
+      }
+    }
+  }
+
+  // .prices-swiper__field-value
+
+  &__field-value {
+    font-family: TT Lakes;
+    font-size: 5x;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      font-family: TT Lakes;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+    }
+
+    @media (min-width: 1366px) {
+      font-family: TT Lakes;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+    }
+  }
+
+  .swiper-pagination-prices {
+  }
+}

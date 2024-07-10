@@ -1,0 +1,27 @@
+.service-request {
+
+  // .service-request__link
+
+  &__link {
+
+    @media (min-width: 1366px) {
+      padding-right: 32px;
+      display: flex;
+      align-items: center;
+      font-family: TT Lakes;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.20000000298023224px;
+      text-align: right;
+    }
+  }
+
+  // .service-request__text
+
+  &__text {
+
+    @media (min-width: 1366px) {
+      padding-right: 9px;
+    }
+  }
+}
