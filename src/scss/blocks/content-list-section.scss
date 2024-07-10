@@ -54,6 +54,8 @@ $contentListBorderColor: rgba(217, 255, 245, 1);
   // .content-list-section__main--prices
 
   &__main--prices {
+    padding-bottom: 40px;
+
     @media (min-width: 768px) and (max-width: 1365px) {
       padding-bottom: 47px;
     }
