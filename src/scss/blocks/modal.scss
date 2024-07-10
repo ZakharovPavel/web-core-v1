@@ -1,0 +1,111 @@
+$bgColorWhite: rgba(255, 255, 255, 1);
+$shadowModalColorFirst: rgba(14, 24, 80, 0.2);
+$shadowModalColorSecond: rgba(69, 79, 126, 0.02);
+$inputColor: rgba(126, 126, 130, 1);
+$inputColorBorder: rgba(234, 234, 234, 1);
+$inputColorPlaceholder: rgba(181, 182, 188, 1);
+
+.modal {
+  align-self: flex-end;
+  width: 320px;
+  min-height: 100%;
+  padding-top: 24px;
+  flex-direction: column;
+  background-color: $bgColorWhite;
+  box-shadow: 
+          16px 0 52px 0 $shadowModalColorFirst,
+          -2px 0 4px 0 $shadowModalColorSecond;
+  position: absolute;
+  min-height: 100%;
+  z-index: 99;
+
+  @media (min-width: 768px) {
+    padding-top: 0;
+      position: absolute;
+      width: 440px;
+      box-shadow: 
+          16px 0 52px 0 $shadowModalColorFirst,
+          -2px 0 4px 0 $shadowModalColorSecond;
+  }
+
+  // .modal__header
+
+  &__header {
+  }
+
+  &__header-button-container {
+    padding-left: 16px;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  &__main {
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-grow: 1;
+
+    @media (min-width: 768px) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+
+	&__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  // .modal-form__input
+
+  &__input {
+    box-sizing: border-box;
+    padding-left: 16px;
+    width: 100%;
+    height: 48px;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    color: $inputColor;
+    border: 1px solid $inputColorBorder;
+    border-radius: 10px;
+
+    &::placeholder {
+      /* padding-left: 16px; */
+      font-family: TT Lakes;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.20000000298023224px;
+      text-align: left;
+      color: $inputColorPlaceholder;
+    }
+
+    &--message {
+      height: 118px;
+      padding-top: 16px;
+    }
+  }
+
+  // .modal-form__text
+
+  &__text {
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    color: $inputColor;
+  }
+
+  // .modal-form__input--message
+
+  &__input--message {
+  }
+
+  &--call {
+  }
+
+  &--feedback {
+  }
+}

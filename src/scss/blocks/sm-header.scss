@@ -1,0 +1,21 @@
+.sm-header {
+
+  // .sm-header__left-side
+
+  &__left-side {
+    display: flex;
+    min-width: 60%;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  // .sm-header__right-side
+
+  &__right-side {
+    display: flex;
+    min-width: 39%;
+    justify-content: flex-end;
+    column-gap: 16px;
+  }
+}

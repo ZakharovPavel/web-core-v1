@@ -1,0 +1,96 @@
+.round-button {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+  }
+
+  &--burger {
+    background-image: url("../../source/icons/burger.png");
+  }
+
+  &--repair {
+    background-image: url("../../source/icons/repair.png");
+  }
+
+  &--checkstatus {
+    background-image: url("../../source/icons/checkstatus.png");
+  }
+
+  &--call {
+    background-image: url("../../source/icons/call.png");
+    @media (min-width: 768px) and (max-width: 1365px) {
+      background-image: url("../../source/icons/call.png");
+    }
+  }
+
+  &--chat {
+    background-image: url("../../source/icons/chat.png");
+    @media (min-width: 768px) and (max-width: 1365px) {
+      background-image: url("../../source/icons/chat.png");
+    }
+  }
+
+  &--profile {
+    background-image: url("../../source/icons/profile.png");
+    @media (min-width: 768px) and (max-width: 1365px) {
+      background-image: url("../../source/icons/profile.png");
+    }
+  }
+
+  &--cross {
+    background-image: url("../../source/icons/cross.svg");
+  }
+
+  &--search {
+    background-image: url("../../source/icons/search.svg");
+  }
+
+  &--cross--sm {
+    @media (min-width: 1366px) {
+      display: none;
+    }
+  }
+
+  &--cross--modal {
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 32px;
+      left: -72px;
+      z-index: 9;
+    }
+  }
+
+  &--call--sm {
+  }
+
+  &--chat--sm {
+  }
+
+  &--cross--modal-call {
+  }
+
+  &--cross--modal-feedback {
+  }
+
+  &--burger--s {
+  }
+
+  &--burger--md {
+  }
+
+  &--call--header {
+  }
+
+  &--chat--header {
+  }
+
+}
+
+
+
+

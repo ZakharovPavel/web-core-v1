@@ -1,0 +1,131 @@
+$bgColorWhite: rgba(255, 255, 255, 1);
+$titleColorGrey: rgba(126, 126, 130, 1);
+$bgColorF8: #F8F8F8;
+
+.content-list-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(217, 255, 245, 1);
+
+  @media (min-width: 1366px) {
+    justify-content: center;
+  }
+
+  // .content-list-section__header
+
+  &__header {
+    width: 100%;
+    padding: 16px;
+    background-color: $bgColorWhite;
+  }
+
+  // .content-list-section__title
+
+  &__title {
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $titleColorGrey;
+    font-weight: 300;
+  }
+
+  // .content-list-section__main
+
+  &__main {
+    max-width: 1440px;
+    min-width: 0;
+    padding-top: 16px;
+    background-color: $bgColorF8;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      padding: 24px;
+    }
+
+    @media (min-width: 1366px) {
+      padding-top: 24px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+
+  // .content-list-section__main--prices
+
+  &__main--prices {
+    @media (min-width: 768px) and (max-width: 1365px) {
+      padding-bottom: 47px;
+    }
+
+    @media (min-width: 1366px) {
+      padding-bottom: 47px;
+    }
+  }
+
+  // .content-list-section__text-container
+
+  &__text-container {
+  }
+
+  // .content-list-section__text-container--prices
+
+  &__text-container--prices {
+    padding-right: 16px;
+    padding-left: 16px;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      padding-left: 0;
+      max-width: 425px;
+    }
+
+    @media (min-width: 1366px) {
+      padding-left: 0;
+      max-width: 425px;
+    }
+  }
+
+  // .content-list-section__text
+
+  &__text {
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+
+  // .content-list-section__text--prices
+
+  &__text--prices {
+    padding-bottom: 16px;
+  }
+
+  // .content-list-section__link
+
+  &__link {
+    width: fit-content;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // .content-list-section__link-text
+
+  &__link-text {
+    align-items: center;
+
+    &::after {
+      content: url("../../source/icons/line.svg");
+      padding-left: 10px;
+    }
+  }
+}

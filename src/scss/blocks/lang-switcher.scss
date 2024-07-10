@@ -1,0 +1,22 @@
+$langHoverColor: rgba(126, 126, 130, 1);
+
+.lang-switcher {
+
+  display: flex;
+  column-gap: 10px;
+
+  // .lang-switcher__link
+
+  &__link {
+    text-transform: uppercase;
+    display: block;
+    transition: transform 0.2s, color 0.2s;
+    
+    &:hover {
+      transform: scale(1.2);
+      color: $langHoverColor;
+    }
+  }
+
+
+}

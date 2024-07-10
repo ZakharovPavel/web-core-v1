@@ -1,0 +1,57 @@
+$textColorWhite: rgba(255, 255, 255, 1);
+$bgColorButtonPink: rgba(255, 62, 121, 1);
+
+.long-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 8px;
+  font-family: TT Lakes;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $textColorWhite;
+  background-color: $bgColorButtonPink;
+  border-radius: 35px;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.2s;
+  }
+
+  &::after {
+    content: url('../../source/icons/goside.svg');
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--modal {
+    align-self: flex-end;
+    padding-left: 20px;
+    width: 136px;
+    height: 32px;
+    font-family: TT Lakes;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15000000596046448px;
+  }
+
+  &--prices {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 119px;
+    height: 32px;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      position: static;
+    }
+
+    @media (min-width: 1366px) {
+      position: static;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.main-header-container {
+
+  @media (min-width: 1366px) {
+    padding-top: 42px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,64 @@
+.expand-button {
+
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+
+  @media (min-width: 768px) and (max-width: 1365px) {
+    display: flex;
+  }
+
+  @media (min-width: 1366px) {
+    display: flex;
+  }
+
+  &::before {
+    content: url("../../source/icons/expand-down.svg");
+  }
+
+  &--hide::before {
+    content: url("../../source/icons/expand-top.svg");
+  }
+
+  // .expand-button__text
+
+  &__text {
+    display: block;
+    padding-left: 8px;
+  }
+
+  &--main-section {
+    padding-top: 14px;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      padding-top: 14px;
+    }
+
+    @media (min-width: 1366px) {
+      padding-top: 14px;
+    }
+  }
+  
+  &--brands {
+  }
+
+  &--swiper-list {
+    display: none;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      display: flex;
+    }
+  
+    @media (min-width: 1366px) {
+      display: flex;
+    }
+  }
+  
+  &--techs {
+  }
+}
