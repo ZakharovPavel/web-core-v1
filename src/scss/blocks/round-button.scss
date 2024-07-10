@@ -10,44 +10,44 @@
   }
 
   &--burger {
-    background-image: url("./img/ic/burger.png");
+    background-image: url("../img/burger.png");
   }
 
   &--repair {
-    background-image: url("./img/ic/repair.png");
+    background-image: url("../img/repair.png");
   }
 
   &--checkstatus {
-    background-image: url("./img/ic/checkstatus.png");
+    background-image: url("../img/checkstatus.png");
   }
 
   &--call {
-    background-image: url("./img/ic/call.png");
+    background-image: url("../img/call.png");
     @media (min-width: 768px) and (max-width: 1365px) {
-      background-image: url("./img/ic/call.png");
+      background-image: url("../img/call.png");
     }
   }
 
   &--chat {
-    background-image: url("./img/ic/chat.png");
+    background-image: url("../img/chat.png");
     @media (min-width: 768px) and (max-width: 1365px) {
-      background-image: url("./img/ic/chat.png");
+      background-image: url("../img/chat.png");
     }
   }
 
   &--profile {
-    background-image: url("./img/ic/profile.png");
+    background-image: url("../img/profile.png");
     @media (min-width: 768px) and (max-width: 1365px) {
-      background-image: url("./img/ic/profile.png");
+      background-image: url("../img/profile.png");
     }
   }
 
   &--cross {
-    background-image: url("./img/ic/cross.svg");
+    background-image: url("../img/cross.svg");
   }
 
   &--search {
-    background-image: url("./img/ic/search.svg");
+    background-image: url("../img/search.svg");
   }
 
   &--cross--sm {

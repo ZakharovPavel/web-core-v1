@@ -125,7 +125,7 @@ $contentListBorderColor: rgba(217, 255, 245, 1);
     align-items: center;
 
     &::after {
-      content: url("./img/ic/line.svg");
+      content: url("../img/line.svg");
       padding-left: 10px;
     }
   }
