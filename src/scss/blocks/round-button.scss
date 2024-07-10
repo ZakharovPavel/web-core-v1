@@ -10,44 +10,44 @@
   }
 
   &--burger {
-    background-image: url("../../source/icons/burger.png");
+    background-image: url("/src/img/ic/burger.png");
   }
 
   &--repair {
-    background-image: url("../../source/icons/repair.png");
+    background-image: url("/src/img/ic/repair.png");
   }
 
   &--checkstatus {
-    background-image: url("../../source/icons/checkstatus.png");
+    background-image: url("/src/img/ic/checkstatus.png");
   }
 
   &--call {
-    background-image: url("../../source/icons/call.png");
+    background-image: url("/src/img/ic/call.png");
     @media (min-width: 768px) and (max-width: 1365px) {
-      background-image: url("../../source/icons/call.png");
+      background-image: url("/src/img/ic/call.png");
     }
   }
 
   &--chat {
-    background-image: url("../../source/icons/chat.png");
+    background-image: url("/src/img/ic/chat.png");
     @media (min-width: 768px) and (max-width: 1365px) {
-      background-image: url("../../source/icons/chat.png");
+      background-image: url("/src/img/ic/chat.png");
     }
   }
 
   &--profile {
-    background-image: url("../../source/icons/profile.png");
+    background-image: url("/src/img/ic/profile.png");
     @media (min-width: 768px) and (max-width: 1365px) {
-      background-image: url("../../source/icons/profile.png");
+      background-image: url("/src/img/ic/profile.png");
     }
   }
 
   &--cross {
-    background-image: url("../../source/icons/cross.svg");
+    background-image: url("/src/img/ic/cross.svg");
   }
 
   &--search {
-    background-image: url("../../source/icons/search.svg");
+    background-image: url("/src/img/ic/search.svg");
   }
 
   &--cross--sm {
