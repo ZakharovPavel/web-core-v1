@@ -124,7 +124,7 @@ $bgColorF8: #F8F8F8;
     align-items: center;
 
     &::after {
-      content: url("../../source/icons/line.svg");
+      content: url("/src/img/ic/line.svg");
       padding-left: 10px;
     }
   }
