@@ -12,7 +12,7 @@ $bgColorWhite: rgba(255, 255, 255, 1);
 
   @media (min-width: 1366px) {
     width: 100%;
-    height: 160px;
+    max-height: 160px;
     padding-bottom: 16px;
   }
 
@@ -82,6 +82,10 @@ $bgColorWhite: rgba(255, 255, 255, 1);
   // .brands-swiper__logo
 
   &__logo {
+  }
+
+  .expand {
+    max-height: 100%;
   }
 
   .swiper-pagination-brands {
