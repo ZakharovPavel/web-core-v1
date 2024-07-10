@@ -421,12 +421,14 @@ button, input[type="submit"], input[type="reset"] {
         padding-top: 24px;
         padding-left: 32px;
         padding-right: 32px; } }
-  @media (min-width: 768px) and (max-width: 1365px) {
-    .content-list-section__main--prices {
-      padding-bottom: 47px; } }
-  @media (min-width: 1366px) {
-    .content-list-section__main--prices {
-      padding-bottom: 47px; } }
+  .content-list-section__main--prices {
+    padding-bottom: 40px; }
+    @media (min-width: 768px) and (max-width: 1365px) {
+      .content-list-section__main--prices {
+        padding-bottom: 47px; } }
+    @media (min-width: 1366px) {
+      .content-list-section__main--prices {
+        padding-bottom: 47px; } }
   .content-list-section__text-container--prices {
     padding-right: 16px;
     padding-left: 16px; }
