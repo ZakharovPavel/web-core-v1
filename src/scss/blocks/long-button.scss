@@ -21,7 +21,7 @@ $bgColorButtonPink: rgba(255, 62, 121, 1);
   }
 
   &::after {
-    content: url('/src/img/ic/goside.svg');
+    content: url('./img/ic/goside.svg');
     width: 24px;
     height: 24px;
     background-repeat: no-repeat;
