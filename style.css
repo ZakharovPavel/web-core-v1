@@ -463,7 +463,7 @@ button, input[type="submit"], input[type="reset"] {
   .content-list-section__link-text {
     align-items: center; }
     .content-list-section__link-text::after {
-      content: url("/src/img/ic/line.svg");
+      content: url(./static/line.svg);
       padding-left: 10px; }
 
 .expand-button {
@@ -482,9 +482,9 @@ button, input[type="submit"], input[type="reset"] {
     .expand-button {
       display: flex; } }
   .expand-button::before {
-    content: url("/src/img/ic/expand-down.svg"); }
+    content: url(./static/expand-down.svg); }
   .expand-button--hide::before {
-    content: url("/src/img/ic/expand-top.svg"); }
+    content: url(./static/expand-top.svg); }
   .expand-button__text {
     display: block;
     padding-left: 8px; }
@@ -692,7 +692,7 @@ button, input[type="submit"], input[type="reset"] {
     transform: scale(1.05);
     transition: all 0.2s; }
   .long-button::after {
-    content: url("/src/img/ic/goside.svg");
+    content: url(./static/goside.svg);
     width: 24px;
     height: 24px;
     background-repeat: no-repeat;
@@ -737,7 +737,7 @@ button, input[type="submit"], input[type="reset"] {
       padding-top: 32px;
       padding-bottom: 32px; } }
   .main-header::before {
-    content: url("/src/img/ic/highlight--md.svg");
+    content: url(./static/highlight--md.svg);
     align-self: center; }
   .main-header__title {
     width: 288px;
@@ -1107,30 +1107,30 @@ button, input[type="submit"], input[type="reset"] {
     transform: scale(1.1);
     transition: all 0.2s; }
   .round-button--burger {
-    background-image: url("/src/img/ic/burger.png"); }
+    background-image: url(./static/burger.png); }
   .round-button--repair {
-    background-image: url("/src/img/ic/repair.png"); }
+    background-image: url(./static/repair.png); }
   .round-button--checkstatus {
-    background-image: url("/src/img/ic/checkstatus.png"); }
+    background-image: url(./static/checkstatus.png); }
   .round-button--call {
-    background-image: url("/src/img/ic/call.png"); }
+    background-image: url(./static/call.png); }
     @media (min-width: 768px) and (max-width: 1365px) {
       .round-button--call {
-        background-image: url("/src/img/ic/call.png"); } }
+        background-image: url(./static/call.png); } }
   .round-button--chat {
-    background-image: url("/src/img/ic/chat.png"); }
+    background-image: url(./static/chat.png); }
     @media (min-width: 768px) and (max-width: 1365px) {
       .round-button--chat {
-        background-image: url("/src/img/ic/chat.png"); } }
+        background-image: url(./static/chat.png); } }
   .round-button--profile {
-    background-image: url("/src/img/ic/profile.png"); }
+    background-image: url(./static/profile.png); }
     @media (min-width: 768px) and (max-width: 1365px) {
       .round-button--profile {
-        background-image: url("/src/img/ic/profile.png"); } }
+        background-image: url(./static/profile.png); } }
   .round-button--cross {
-    background-image: url("/src/img/ic/cross.svg"); }
+    background-image: url(./static/cross.svg); }
   .round-button--search {
-    background-image: url("/src/img/ic/search.svg"); }
+    background-image: url(./static/search.svg); }
   @media (min-width: 1366px) {
     .round-button--cross--sm {
       display: none; } }
@@ -1147,7 +1147,7 @@ button, input[type="submit"], input[type="reset"] {
   background-repeat: no-repeat;
   background-position: center; }
   .round-icon--go {
-    background-image: url("/src/img/ic/round-go.svg"); }
+    background-image: url(./static/round-go.svg); }
   .round-icon--techs {
     align-self: flex-end; }
 
