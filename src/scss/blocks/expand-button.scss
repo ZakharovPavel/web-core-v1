@@ -18,11 +18,11 @@
   }
 
   &::before {
-    content: url("./img/ic/expand-down.svg");
+    content: url("../img/expand-down.svg");
   }
 
   &--hide::before {
-    content: url("./img/ic/expand-top.svg");
+    content: url("../img/expand-top.svg");
   }
 
   // .expand-button__text
