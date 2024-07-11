@@ -1,11 +1,39 @@
 $inputColor: rgba(126, 126, 130, 1);
 $bgColorWhite: rgba(255, 255, 255, 1);
 $inputColorBorder: rgba(234, 234, 234, 1);
+$sideGradientColorFrom: rgba(248, 248, 248, 0);
+$sideGradientColorTo: rgba(248, 248, 248, 1);
 
 .prices-swiper {
 
   width: 100%;
   min-height: 160px;
+
+  &::after {
+    @media (max-width: 767px) {
+      content: '';
+      width: 15px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: linear-gradient(to right, $sideGradientColorFrom, $sideGradientColorTo 80%);
+      z-index: 3;
+    }
+  }
+
+  &::before {
+    @media (max-width: 767px) {
+      content: '';
+      width: 15px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      background: linear-gradient(to left, $sideGradientColorFrom, $sideGradientColorTo 80%);
+      z-index: 3;
+    }
+  }
+
 
   // .prices-swiper__wrapper
 
@@ -75,19 +103,6 @@ $inputColorBorder: rgba(234, 234, 234, 1);
   // .prices-swiper__field-name--header
 
   &__field-name--header {
-
-    // @media (min-width: 768px) and (max-width: 1365px) {
-    //   &:first-child {
-    //     flex-basis: 52%;
-    //   }
-    // }
-
-    // @media (min-width: 1366px) {
-    //   &:first-child {
-    //     flex-basis: 52%;
-    //   }
-    // }
-
     @media (min-width: 1366px) {
       display: block;
       flex-basis: 10%;

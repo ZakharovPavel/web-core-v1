@@ -21,6 +21,7 @@ $font-family: "TT Lakes", "Arial", sans-serif;
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    overflow-x: hidden;
   }
   
   /* Sections
@@ -367,11 +368,11 @@ $font-family: "TT Lakes", "Arial", sans-serif;
 
 html,
 body {
-    height: 100%;
-    box-sizing: border-box;
-    font-family: $font-family;
-    color: $text;
-    scrollbar-gutter: stable;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: $font-family;
+  color: $text;
+  scrollbar-gutter: stable;
 }
 
 body {
