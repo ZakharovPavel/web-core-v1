@@ -21,6 +21,7 @@ $font-family: "TT Lakes", "Arial", sans-serif;
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    overflow-x: hidden;
   }
   
   /* Sections
@@ -354,24 +355,22 @@ $font-family: "TT Lakes", "Arial", sans-serif;
    * Add the correct display in IE 10.
    */
   
-  [hidden] {
-    display: none;
-  }
+[hidden] {
+  display: none;
+}
 
-
-
-  * {
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-    height: 100%;
-    box-sizing: border-box;
-    font-family: $font-family;
-    color: $text;
-    scrollbar-gutter: stable;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: $font-family;
+  color: $text;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -385,7 +384,6 @@ ul {
 a {
     text-decoration: none;
     color: $text;
-    
 }
 
 button, input[type="submit"], input[type="reset"] {

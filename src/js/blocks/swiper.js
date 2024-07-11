@@ -2,9 +2,9 @@
 const sliderBrands = document.querySelector('.brands-swiper');
 const sliderTechs = document.querySelector('.techs-swiper');
 const sliderPrices = document.querySelector('.prices-swiper');
-const paginationBrands = document.querySelector('.swiper-pagination-brands');
-const paginationTechs = document.querySelector('.swiper-pagination-techs');
-const paginationPrices = document.querySelector('.swiper-pagination-prices');
+const paginationBrands = document.querySelector('.swiper-pagination--brands');
+const paginationTechs = document.querySelector('.swiper-pagination--techs');
+const paginationPrices = document.querySelector('.swiper-pagination--prices');
 let mySwiper;
 let mySwiperBrands;
 let mySwiperTechs;
@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
         slidesOffsetBefore: 16,
         slidesOffsetAfter: 16,
         pagination: {
-          el: '.swiper-pagination-brands',
+          el: paginationBrands,
           clickable: true,
         },
       });
@@ -52,7 +52,7 @@ window.addEventListener('load', () => {
         slidesOffsetBefore: 16,
         slidesOffsetAfter: 16,
         pagination: {
-          el: '.swiper-pagination-techs',
+          el: '.swiper-pagination--techs',
           clickable: true,
         },
       });
@@ -79,7 +79,7 @@ window.addEventListener('load', () => {
         slidesOffsetBefore: 16,
         slidesOffsetAfter: 16,
         pagination: {
-          el: '.swiper-pagination-prices',
+          el: '.swiper-pagination--prices',
           clickable: true,
         },
       });

@@ -1,4 +1,6 @@
 $bgColorWhite: rgba(255, 255, 255, 1);
+$sideGradientColorFrom: rgba(248, 248, 248, 0);
+$sideGradientColorTo: rgba(248, 248, 248, 1);
 
 .brands-swiper {
 
@@ -12,8 +14,33 @@ $bgColorWhite: rgba(255, 255, 255, 1);
 
   @media (min-width: 1366px) {
     width: 100%;
-    height: 160px;
+    max-height: 160px;
     padding-bottom: 16px;
+  }
+
+  &::after {
+    @media (max-width: 767px) {
+      content: '';
+      width: 15px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: linear-gradient(to right, $sideGradientColorFrom, $sideGradientColorTo 80%);
+      z-index: 3;
+    }
+  }
+
+  &::before {
+    @media (max-width: 767px) {
+      content: '';
+      width: 15px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      background: linear-gradient(to left, $sideGradientColorFrom, $sideGradientColorTo 80%);
+      z-index: 3;
+    }
   }
 
   // .brands-swiper__wrapper
@@ -42,6 +69,17 @@ $bgColorWhite: rgba(255, 255, 255, 1);
       row-gap: 16px;
       flex-wrap: wrap;
     }
+
+    position: relative;
+
+    // &::after {
+    //   content: '';
+    //   width: 25px;
+    //   height: 72px;
+    //   position: absolute;
+    //   right: 0;
+    //   background: linear-gradient(to right, rgba(248, 248, 248, 0), rgb(230, 15, 15));
+    // }
   }
 
   // .brands-swiper__item
@@ -84,6 +122,8 @@ $bgColorWhite: rgba(255, 255, 255, 1);
   &__logo {
   }
 
-  .swiper-pagination-brands {
+  .expand {
+    max-height: 100%;
   }
+
 }

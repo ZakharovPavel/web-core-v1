@@ -18,42 +18,67 @@ const feedbackHeaderButton = document.querySelector('.round-button--chat--header
 const closeButtonCall = document.querySelector('.round-button--cross--modal-call');
 const closeButtonFeedback = document.querySelector('.round-button--cross--modal-feedback');
 
+let fromMenu = false;
+
 
 // modal call
 callSmButton.addEventListener('click', () => {
   modalCall.classList.add('modal-wrapper--show');
+  document.body.classList.add('scroll-lock');
+  fromMenu = true;
 });
 
 callHeaderButton.addEventListener('click', () => {
   modalCall.classList.add('modal-wrapper--show');
+  document.body.classList.add('scroll-lock');
 });
 
 closeButtonCall.addEventListener('click', () => {
   modalCall.classList.remove('modal-wrapper--show');
+  if (!fromMenu || window.innerWidth > 1365) {
+    document.body.classList.remove('scroll-lock');
+  }
+  fromMenu = false;
 });
 
 overlayCall.addEventListener('click', (evt) => {
   if (evt.target === overlayCall) {
     modalCall.classList.remove('modal-wrapper--show');
+    if (!fromMenu || window.innerWidth > 1365) {
+      document.body.classList.remove('scroll-lock');
+    }
   }
+  fromMenu = false;
 });
 
 
 // modal feedback
 feedbackSmButton.addEventListener('click', () => {
   modalFeedback.classList.add('modal-wrapper--show');
+  document.body.classList.add('scroll-lock');
+  fromMenu = true;
 });
 
 feedbackHeaderButton.addEventListener('click', () => {
   modalFeedback.classList.add('modal-wrapper--show');
+  document.body.classList.add('scroll-lock');
+
 });
 
 closeButtonFeedback.addEventListener('click', () => {
   modalFeedback.classList.remove('modal-wrapper--show');
+  if (!fromMenu || window.innerWidth > 1365) {
+    document.body.classList.remove('scroll-lock');
+  }
+  fromMenu = false;
 });
 
 overlayFeedback.addEventListener('click', (evt) => {
   if (evt.target === overlayFeedback) {
     modalFeedback.classList.remove('modal-wrapper--show');
+    if (!fromMenu || window.innerWidth > 1365) {
+      document.body.classList.remove('scroll-lock');
+    }
   }
+  fromMenu = false;
 });
