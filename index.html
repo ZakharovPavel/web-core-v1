@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -73,13 +73,13 @@
                         <h2 class="main-header__title main-header__title--modal">Заказать звонок</h2>
                     </div>
                 </header>
-                <main class="modal__main">
-                    <form action="" class="modal__form">
+                <div class="modal__main">
+                    <form class="modal__form">
                         <input type="text" placeholder="Телефон" class="modal__input">
                         <p class="modal__text">Нажимая “отправить”, вы даете согласие на <a href="#" class="text-link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="text-link">политикой конфиденциальности</a></p>
                         <button onclick="event.preventDefault()" class="long-button long-button--modal">Отправить</button>
                     </form>
-                </main>
+                </div>
             </aside>
         </div>
     
@@ -96,8 +96,8 @@
                         <h2 class="main-header__title main-header__title--modal">Обратная связь</h2>
                     </div>
                 </header>
-                <main class="modal__main">
-                    <form action="" class="modal__form">
+                <div class="modal__main">
+                    <form class="modal__form">
                         <input type="text" placeholder="Имя" class="modal__input">
                         <input type="text" placeholder="Телефон" class="modal__input">
                         <input type="text" placeholder="Электронная почта" class="modal__input">
@@ -105,7 +105,7 @@
                         <p class="modal__text">Нажимая “отправить”, вы даете согласие на <a href="#" class="text-link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="text-link">политикой конфиденциальности</a></p>
                         <button onclick="event.preventDefault()" class="long-button long-button--modal">Отправить</button>
                     </form>
-                </main>
+                </div>
             </aside>
         </div>
     
@@ -186,7 +186,7 @@
                     </nav>
                     
                 </div>
-                <section class="main-section">
+                <div class="main-section">
                     <div class="main-section__text-container">
                         <div class="main-section__text">
                             <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>
@@ -200,14 +200,14 @@
     
                     </div>
                     <img src="./img/ec28084f3de98850700667e14dbc02fd.png" alt="Фото logotypeа сервиса" class="main-section__image image">
-                </section>
+                </div>
     
                 <section class="content-list-section">
                     <header class="content-list-section__header">
                         <h2 class="content-list-section__title">Ремонт техники различных брендов</h2>
                     </header>
     
-                    <main class="content-list-section__main">
+                    <div class="content-list-section__main">
                         <nav class="swiper brands-swiper" data-mobile="false">
                             <ul class="swiper-wrapper brands-swiper__wrapper">
                                 <li class="brands-swiper__item swiper-slide">
@@ -277,14 +277,14 @@
                                     </a>
                                 </li>
                             </ul>
-    
-                            <div class="swiper-pagination swiper-pagination-brands"></div>
+                            
+                            <div class="swiper-pagination swiper-pagination--brands"></div>
                         </nav>
     
                         <button class="expand-button expand-button--swiper-list expand-button--brands">
                             <span class="expand-button__text">Показать все</span>
                         </button>
-                    </main>
+                    </div>
                 </section>
     
                 <section class="content-list-section">
@@ -292,7 +292,7 @@
                         <h2 class="content-list-section__title">Ремонт различных видов техники</h2>
                     </header>
     
-                    <main class="content-list-section__main">
+                    <div class="content-list-section__main">
                         <nav class="swiper techs-swiper" data-mobile="false">
                             <ul class="swiper-wrapper techs-swiper__wrapper">
                                 <li class="techs-swiper__item swiper-slide">
@@ -363,13 +363,13 @@
                                 </li>
                             </ul>
     
-                            <div class="swiper-pagination swiper-pagination-techs"></div>
+                            <div class="swiper-pagination swiper-pagination--techs"></div>
                         </nav>
     
                         <button class="expand-button expand-button--techs expand-button--swiper-list">
                             <span class="expand-button__text">Показать все</span>
                         </button>
-                    </main>
+                    </div>
                 </section>
     
                 <section class="content-list-section">
@@ -377,15 +377,15 @@
                         <h2 class="content-list-section__title">Цены на услуги</h2>
                     </header>
     
-                    <main class="content-list-section__main content-list-section__main--prices">
+                    <div class="content-list-section__main content-list-section__main--prices">
                         <nav class="swiper prices-swiper" data-mobile="false">
                             <ul class="swiper-wrapper prices-swiper__wrapper">
-                                <div class="prices-swiper__card-header-container">
+                                <li class="prices-swiper__card-header-container">
                                     <p class="prices-swiper__field-name prices-swiper__field-name--header">Ремонтные услуги</p>
                                     <p class="prices-swiper__field-name prices-swiper__field-name--header">Цена</p>
                                     <p class="prices-swiper__field-name prices-swiper__field-name--header">Срок</p>
                                     <div class="prices-swiper__header-placeholder"></div>
-                                </div>
+                                </li>
     
                                 <li class="swiper-slide prices-swiper__item">
                                     <div class="prices-swiper__card-container">
@@ -475,7 +475,7 @@
                                 
                             </ul>
     
-                            <div class="swiper-pagination swiper-pagination-prices"></div>
+                            <div class="swiper-pagination swiper-pagination--prices"></div>
                         </nav>
     
                         <div class="content-list-section__text-container content-list-section__text-container--prices">
@@ -484,7 +484,7 @@
                                 <span class="content-list-section__link-text">Получить коммерческое предложение</span>
                             </a>
                         </div>
-                    </main>
+                    </div>
                 </section>
     
             </main>
