@@ -11,6 +11,7 @@ $contentListBorderColor: rgba(217, 255, 245, 1);
 
   @media (min-width: 1366px) {
     justify-content: center;
+    padding-bottom: 30px;
   }
 
   // .content-list-section__header
@@ -62,7 +63,6 @@ $contentListBorderColor: rgba(217, 255, 245, 1);
     }
 
     @media (min-width: 1366px) {
-      padding-bottom: 47px;
     }
   }
 
