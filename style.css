@@ -778,11 +778,12 @@ button, input[type="submit"], input[type="reset"] {
       flex-wrap: nowrap;
       padding-left: 24px;
       padding-right: 25px;
-      padding-bottom: 40px; } }
+      padding-bottom: 32px; } }
   @media (min-width: 1366px) {
     .main-section {
       padding-left: 34px;
       padding-right: 29px;
+      padding-bottom: 50px;
       display: flex;
       justify-content: space-between; } }
   .main-section__text-container {
