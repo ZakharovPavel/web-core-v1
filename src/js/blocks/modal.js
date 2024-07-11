@@ -82,5 +82,3 @@ overlayFeedback.addEventListener('click', (evt) => {
   }
   fromMenu = false;
 });
-
-

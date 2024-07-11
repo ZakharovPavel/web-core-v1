@@ -36,11 +36,11 @@ $bgColorWhite: rgba(255, 255, 255, 1);
     flex-grow: 0;
 
     @media (max-height: 685px) {
-      flex-grow: 0;
+      // flex-grow: 0;
     }
 
     @media (min-width: 768px) and (max-width: 1365px) and (max-height: 715px) {
-      flex-grow: 0;
+      // flex-grow: 0;
     }
   }
 
