@@ -1311,12 +1311,6 @@ button, input[type="submit"], input[type="reset"] {
     gap: 0; }
   .sm__menu {
     flex-grow: 0; }
-    @media (max-height: 685px) {
-      .sm__menu {
-        flex-grow: 0; } }
-    @media (min-width: 768px) and (max-width: 1365px) and (max-height: 715px) {
-      .sm__menu {
-        flex-grow: 0; } }
   .sm__list {
     display: flex;
     flex-direction: column;
