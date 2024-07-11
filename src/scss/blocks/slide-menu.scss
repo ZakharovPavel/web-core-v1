@@ -1,6 +1,8 @@
 $bgItemColor: #FFFFFF;
 $borderItemColor: #B8FFEC;
 $linkColorGrey: #7E7E82;
+$sideGradientColorFrom: rgba(248, 248, 248, 0);
+$sideGradientColorTo: rgba(248, 248, 248, 1);
 
 .slide-menu {
 
@@ -27,14 +29,31 @@ $linkColorGrey: #7E7E82;
       overflow: inherit;
     }
 
+    &:first-child {
+      padding-left: 16px;
+    }
+
     &::before {
       content: '';
-      padding-left: 16px;
+
+      width: 25px;
+      height: 40px;
+      position: absolute;
+      left: 0;
+      background: linear-gradient(to left, $sideGradientColorFrom, $sideGradientColorTo);
 
       @media (min-width: 1366px) {
-        content: '';
         padding-left: 0;
       }
+    }
+
+    &::after {
+      content: '';
+      width: 25px;
+      height: 40px;
+      position: absolute;
+      right: 0;
+      background: linear-gradient(to right, $sideGradientColorFrom, $sideGradientColorTo);
     }
 
   }
