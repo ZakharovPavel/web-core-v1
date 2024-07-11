@@ -394,7 +394,8 @@ button, input[type="submit"], input[type="reset"] {
   border-top: 1px solid #d9fff5; }
   @media (min-width: 1366px) {
     .content-list-section {
-      justify-content: center; } }
+      justify-content: center;
+      padding-bottom: 30px; } }
   .content-list-section__header {
     width: 100%;
     padding: 16px;
@@ -422,9 +423,6 @@ button, input[type="submit"], input[type="reset"] {
   .content-list-section__main--prices {
     padding-bottom: 40px; }
     @media (min-width: 768px) and (max-width: 1365px) {
-      .content-list-section__main--prices {
-        padding-bottom: 47px; } }
-    @media (min-width: 1366px) {
       .content-list-section__main--prices {
         padding-bottom: 47px; } }
   .content-list-section__text-container--prices {
@@ -721,7 +719,6 @@ button, input[type="submit"], input[type="reset"] {
 
 @media (min-width: 1366px) {
   .main-header-container {
-    padding-top: 42px;
     padding-bottom: 8px;
     display: flex;
     justify-content: space-between;
@@ -1299,6 +1296,7 @@ button, input[type="submit"], input[type="reset"] {
   z-index: 9; }
   @media (min-width: 1366px) {
     .sm {
+      padding-top: 15px;
       display: flex;
       box-shadow: none;
       position: static; } }
@@ -1415,7 +1413,7 @@ button, input[type="submit"], input[type="reset"] {
 .techs-swiper {
   width: 100%;
   min-height: 160px;
-  padding-bottom: 16px; }
+  padding-bottom: 15px; }
   @media (min-width: 768px) and (max-width: 1365px) {
     .techs-swiper {
       max-height: 160px; } }
