@@ -35,18 +35,20 @@ callHeaderButton.addEventListener('click', () => {
 
 closeButtonCall.addEventListener('click', () => {
   modalCall.classList.remove('modal-wrapper--show');
-  if (!fromMenu) {
+  if (!fromMenu || window.innerWidth > 1365) {
     document.body.classList.remove('scroll-lock');
   }
+  fromMenu = false;
 });
 
 overlayCall.addEventListener('click', (evt) => {
   if (evt.target === overlayCall) {
     modalCall.classList.remove('modal-wrapper--show');
-    if (!fromMenu) {
+    if (!fromMenu || window.innerWidth > 1365) {
       document.body.classList.remove('scroll-lock');
     }
   }
+  fromMenu = false;
 });
 
 
@@ -65,18 +67,20 @@ feedbackHeaderButton.addEventListener('click', () => {
 
 closeButtonFeedback.addEventListener('click', () => {
   modalFeedback.classList.remove('modal-wrapper--show');
-  if (!fromMenu) {
+  if (!fromMenu || window.innerWidth > 1365) {
     document.body.classList.remove('scroll-lock');
   }
+  fromMenu = false;
 });
 
 overlayFeedback.addEventListener('click', (evt) => {
   if (evt.target === overlayFeedback) {
     modalFeedback.classList.remove('modal-wrapper--show');
-    if (!fromMenu) {
+    if (!fromMenu || window.innerWidth > 1365) {
       document.body.classList.remove('scroll-lock');
     }
   }
+  fromMenu = false;
 });
 
 
